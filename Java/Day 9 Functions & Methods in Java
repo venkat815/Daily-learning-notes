@@ -1,0 +1,60 @@
+## What is a Function?
+
+A function is a block of code that performs a specific task.
+
+It can be called whenever needed.
+
+Functions are commonly used in procedural programming languages like C.
+
+Example (C Language)
+
+int add(int a, int b){
+    return a + b;
+}
+
+---
+
+## What is a Method?
+
+A method is a function that belongs to a class.
+
+In Java, all functions are written inside classes, so they are called methods.
+
+Example
+
+public class Test {
+
+    int add(int a, int b){
+        return a + b;
+    }
+
+    public static void main(String[] args){
+
+        Test t = new Test();
+
+        int result = t.add(10,20);
+
+        System.out.println(result);
+    }
+
+}
+
+Output
+
+30
+
+---
+
+## Difference Between Function and Method
+
+Function
+
+- Independent block of code
+- Used in procedural programming
+- Can exist outside a class
+
+Method
+
+- Defined inside a class
+- Used in object-oriented programming
+- Called using an object or class
