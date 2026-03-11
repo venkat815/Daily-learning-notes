@@ -1,0 +1,35 @@
+##What is Encapsulation
+Encapsulation is the process of wrapping data (variables) and code (methods) into a single unit.
+
+It is used to protect data from direct access.
+
+In Java, encapsulation is achieved using:
+
+private variables
+public getter and setter methods
+Example Program
+class Student {
+
+private int age;
+
+public void setAge(int age){
+    this.age = age;
+}
+
+public int getAge(){
+    return age;
+}
+}
+
+public class Main { public static void main(String[] args) {
+
+    Student s = new Student();
+
+    s.setAge(21);
+
+    System.out.println(s.getAge());
+}
+}
+
+Output
+21
