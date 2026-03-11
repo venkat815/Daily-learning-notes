@@ -1,0 +1,49 @@
+##What is Inheritance
+Inheritance allows one class to acquire properties and methods of another class.
+
+It helps in code reuse.
+
+Java uses the keyword extends.
+
+Package Structure (Eclipse)
+package inheritance;
+
+Files: Animal.java Dog.java Main.java
+
+Animal.java
+package inheritance;
+
+public class Animal {
+
+    public void sound(){
+        System.out.println("Animal makes sound");
+    }
+
+}
+package inheritance;
+
+public class Dog extends Animal {
+
+    public void bark(){
+        System.out.println("Dog barks");
+    }
+
+}
+package inheritance;
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Dog d = new Dog();
+
+        d.sound();
+        d.bark();
+
+    }
+
+Output
+
+Animal makes sound
+Dog barks
+}
