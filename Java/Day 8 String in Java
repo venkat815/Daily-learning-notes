@@ -1,0 +1,98 @@
+## What is String
+
+A String in Java is a sequence of characters.
+
+Example:
+"Hello"
+"Java"
+"Programming"
+
+---
+
+## Two Ways to Create String
+
+1. String Literal
+2. Using new Keyword
+
+---
+
+## 1. String Literal
+
+String created using double quotes.
+
+Example:
+
+String s1 = "Hello";
+String s2 = "Hello";
+
+Here Java uses **String Constant Pool**.
+
+Both s1 and s2 refer to the **same memory location**.
+
+Example program:
+
+public class Test {
+
+    public static void main(String[] args) {
+
+        String s1 = "Java";
+        String s2 = "Java";
+
+        System.out.println(s1 == s2);
+
+    }
+
+}
+
+Output
+
+true
+
+---
+
+## 2. String Using new Keyword
+
+String object created using **new keyword**.
+
+Example:
+
+String s1 = new String("Java");
+String s2 = new String("Java");
+
+Here two different objects are created in **heap memory**.
+
+Example program:
+
+public class Test {
+
+    public static void main(String[] args) {
+
+        String s1 = new String("Java");
+        String s2 = new String("Java");
+
+        System.out.println(s1 == s2);
+
+    }
+
+}
+
+Output
+
+false
+
+---
+
+## Key Difference
+
+String Literal
+
+- Stored in String Pool
+- Memory efficient
+- Same object reused
+
+String using new
+
+- Stored in Heap Memory
+- New object created every time
+
+- Difference between both
