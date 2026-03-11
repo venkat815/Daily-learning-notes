@@ -1,0 +1,64 @@
+##What is Polymorphism
+Polymorphism means "many forms".
+
+In Java, polymorphism allows one method to perform different tasks depending on the object.
+
+Types of Polymorphism
+Compile-time Polymorphism (Method Overloading)
+Runtime Polymorphism (Method Overriding)
+Method Overloading Example
+class Calculator {
+
+int add(int a, int b){
+    return a + b;
+}
+
+int add(int a, int b, int c){
+    return a + b + c;
+}
+}
+
+public class Main {
+
+public static void main(String[] args){
+
+    Calculator c = new Calculator();
+
+    System.out.println(c.add(10,20));
+    System.out.println(c.add(10,20,30));
+}
+}
+
+Output
+
+30
+60
+
+Method Overriding Example
+class Animal {
+
+void sound(){
+    System.out.println("Animal makes sound");
+}
+}
+
+class Dog extends Animal {
+
+void sound(){
+    System.out.println("Dog barks");
+}
+}
+
+public class Main {
+
+public static void main(String[] args){
+
+    Dog d = new Dog();
+    d.sound();
+
+}
+}
+
+Output
+
+Dog barks
