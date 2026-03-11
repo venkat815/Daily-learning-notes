@@ -1,0 +1,101 @@
+## What is Memory Management
+
+Memory Management in Java is the process of allocating and deallocating memory for objects and variables.
+
+Java automatically manages memory using **Garbage Collection**.
+
+---
+
+## Memory Areas in Java
+
+Java memory is mainly divided into:
+
+1. Stack Memory
+2. Heap Memory
+3. Method Area
+
+---
+
+## 1. Stack Memory
+
+Stack memory stores:
+
+- Local variables
+- Method calls
+- References to objects
+
+Characteristics:
+- Fast access
+- Automatically deleted when method finishes
+
+Example:
+
+public class Test {
+
+    public static void main(String[] args) {
+
+        int a = 10;
+        int b = 20;
+
+    }
+
+}
+
+Here  **a and b are stored in stack memory**.
+
+---
+
+## 2. Heap Memory
+
+Heap memory stores:
+
+- Objects
+- Instance variables
+
+Objects created using **new keyword** are stored in heap memory.
+
+Example:
+
+class Student {
+
+    int age;
+
+}
+
+public class Main {
+
+    public static void main(String[] args) {
+
+        Student s = new Student();
+
+    }
+
+}
+
+Here **object s is stored in heap memory**.
+
+---
+
+## 3. Method Area
+
+Method area stores:
+
+- Class information
+- Static variables
+- Method code
+
+---
+
+## Garbage Collection
+
+Garbage Collection automatically removes unused objects from memory.
+
+Example:
+
+Student s = new Student();
+s = null;
+
+Now the object becomes **eligible for garbage collection**.
+
+
+- Garbage collection
